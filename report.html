@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="internal-page report-page">
+      <header class="columns">
+        <div class="logo-container column is-half">
+          <img class="logo" src="./assets/logo.png" />
+          <p>
+            <img src="./assets/hospital-user.png" /> XYZ & More Clinic
+            <span>Allied Staff</span>
+          </p>
+        </div>
+        <div class="header-option column is-half">
+          <a href="./Chat.html"><img src="./assets/chat.png" /></a>
+          <a href="#"><img src="./assets/bell-notification.png" /></a>
+          <div class="dropdown profile-dropdown">
+            <div class="dropdown-trigger">
+              <button
+                class="button no-border"
+                onclick="openProfileDropDown()"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+              >
+                <span><img src="./assets/user-profile.png" /> Sean Rada</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="./Profile.html" class="dropdown-item"> My Profile </a>
+                <a href="./index.html" class="dropdown-item"> Logout </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="report">
+        <p class="page-heading">
+          <button class="back-button">
+            <img src="./assets/back-button.png" />
+          </button>
+          Patient Vitals
+        </p>
+        <div class="report-content">
+          <div class="patient-details">
+            <p class="basic-details">
+              <span class="name">Sean Rada</span>
+              <span class="gender">Male</span>
+              <span class="age">45</span>
+            </p>
+            <p class="advanced-details">
+              Contact: <span class="">1234567890</span> Medicare No:
+              <span class="">Male</span> Last Visited:
+              <span class="">09/07/2023</span>
+            </p>
+          </div>
+          <div class="report-details">
+            <div class="columns is-flex-wrap-wrap">
+              <div class="column is-6 field">
+                <label>Blood Glucose</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-6 field">
+                <label>Respiratory Rate</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-6 field">
+                <label>Temperature</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-6 field">
+                <label>SpO2</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-6 field">
+                <label>Blood Pressure</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-6 field">
+                <label>Weight</label>
+                <input type="text" placeholder="Blood Glucose" />
+              </div>
+              <div class="column is-12 field">
+                <label>Remarks</label>
+                <textarea row="5" placeholder="Blood Glucose"></textarea>
+              </div>
+              <div class="column is-12 field">
+                <label>Vital / Relevant Examination</label>
+                <span>Upload Photo</span>
+              </div>
+            </div>
+            <div class="action-items">
+              <div class="columns">
+                <div class="column">
+                  <button class="button is-outlined">Cancel</button>
+                  <button class="button is-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

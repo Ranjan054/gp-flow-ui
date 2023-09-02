@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <div class="container_pg13">
+      <div class="header_pg13">
+        <!-- <h3>Logo</h3> -->
+        <img
+          src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png"
+          alt=""
+          class="main_logo"
+        />
+      </div>
+      <div class="form_container_pg13">
+        <div class="form_content">
+          <!-- SignIn/SignUp -->
+          <div class="form_heading_pg2">
+            <div class="login_heading_pg2">
+              <h3 class="heading_pg2 active" onclick="setActive(this)">
+                Sign up
+              </h3>
+              <h3 class="heading_pg2" onclick="setActive(this)">Sign in</h3>
+            </div>
+          </div>
+          <!-- Form Container -->
+          <div class="form_center_pg1">
+            <div class="firstname_container_pg2">
+              <div class="first_container_pg12">
+                <h3 class="user_name_pg2">Hi Sean Rada,</h3>
+                <h3 class="otp_info_pg2">
+                  We just an OTP on your Mobile number
+                </h3>
+                <div class="flx_pg2 user_name_pg2">
+                  <h3 class="otp_info">Medicare Number</h3>
+                </div>
+                <div class="input_card_pg12">
+                  <input type="text" value="5336 5336 5336 5336" />
+                </div>
+              </div>
+            </div>
+
+            <button class="upload_container_pg12">
+              Upload Mediacare Photo
+            </button>
+
+            <!-- DOB -->
+
+            <div class="dob_container_pg12">
+              <div class="date_field_pg12">
+                <p>Date of birth</p>
+                <input
+                  type="text"
+                  pattern="\d{2}/\d{2}/\d{4}"
+                  placeholder="00/00/000"
+                />
+              </div>
+              <div class="gender_container_pg12">
+                <p class="gender_head_pg12">Gender</p>
+                <div class="gender_selection_pg12">
+                  <button class="gender-option_pg12" data-gender="Male">
+                    Male
+                  </button>
+                  <button class="gender-option_pg12" data-gender="Female">
+                    Female
+                  </button>
+                  <button class="gender-option_pg12" data-gender="Other">
+                    Other
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_pg1">
+            <a style="width: 100%" class="login_pg13" href="./page3.html">
+              Proceed
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+
+      <div class="banner_pg13">
+        <div>
+          <div>
+            <img
+              src="C:\Users\Dell\Documents\superGP\assets\Group137.png"
+              alt=""
+              class="main_logo_pg13"
+            />
+          </div>
+          <div class="right_online_pg13">
+            <h5>Get Online Consultaion</h5>
+          </div>
+          <div class="radio_btn_pg13">
+            <input type="radio" name="radiogroup" checked />
+            <input type="radio" name="radiogroup" />
+            <input type="radio" name="radiogroup" />
+            <input type="radio" name="radiogroup" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const genderOptions = document.querySelectorAll(".gender-option_pg12");
+
+        genderOptions.forEach(function (option) {
+          option.addEventListener("click", function () {
+            const selectedGender = this.getAttribute("data-gender");
+
+            // Remove the 'active' class from all options
+            genderOptions.forEach(function (item) {
+              item.classList.remove("active");
+            });
+
+            // Add the 'active' class to the selected option
+            this.classList.add("active");
+
+            // Perform the desired action based on the selected gender
+            handleGenderSelection(selectedGender);
+          });
+        });
+
+        function handleGenderSelection(gender) {
+          switch (gender) {
+            case "Male":
+              // Code to execute when Male is selected
+              console.log("Male selected");
+              break;
+            case "Female":
+              // Code to execute when Female is selected
+              console.log("Female selected");
+              break;
+            case "Other":
+              // Code to execute when Other is selected
+              console.log("Other selected");
+              break;
+            default:
+              // Default case, if none of the expected values match
+              console.log("Invalid gender");
+          }
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dateInput = document.querySelector(".date_field input");
+
+        dateInput.addEventListener("input", function () {
+          const inputValue = this.value.trim();
+          const validDatePattern = /^\d{2}\/\d{2}\/\d{4}$/;
+
+          if (!validDatePattern.test(inputValue)) {
+            this.setCustomValidity(
+              "Please enter a valid date of birth (DD/MM/YYYY)"
+            );
+          } else {
+            this.setCustomValidity("");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

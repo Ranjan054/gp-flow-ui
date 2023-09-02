@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SGP - Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="internal-page profile-page">
+      <header class="columns">
+        <div class="logo-container column is-half">
+          <img class="logo" src="./assets/logo.png" />
+          <p>
+            <img src="./assets/hospital-user.png" /> XYZ & More Clinic
+            <span>Allied Staff</span>
+          </p>
+        </div>
+        <div class="header-option column is-half">
+          <a href="./Chat.html"><img src="./assets/chat.png" /></a>
+          <a href="#"><img src="./assets/bell-notification.png" /></a>
+
+          <div class="dropdown profile-dropdown">
+            <div class="dropdown-trigger">
+              <button
+                class="button no-border"
+                onclick="openProfileDropDown()"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+              >
+                <span><img src="./assets/user-profile.png" /> Sean Rada</span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="./Profile.html" class="dropdown-item"> My Profile </a>
+                <a href="./index.html" class="dropdown-item"> Logout </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="profile">
+        <p class="page-heading">
+          <button class="back-button">
+            <img src="./assets/back-button.png" />
+          </button>
+          Profile Page
+        </p>
+
+        <section class="profile-content columns">
+          <div class="profile-img column is-5">
+            <img src="./assets/user-profile.png" />
+          </div>
+          <div class="profile-details column is-7">
+            <p class="profile-name">Sean Rada</p>
+            <p>
+              <label>About Me</label>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap
+              </span>
+            </p>
+            <p><label>Clinic Name</label> <span> XYZ Clinic </span></p>
+            <p><label>Email ID</label> <span> sean@gmail.com </span></p>
+            <p><label>Contact Number</label> <span> 1234567890 </span></p>
+            <p>
+              <label>Address</label>
+              <span>
+                1234 xyz 98 Shirley Street PIMPAMA QLD 4209 AUSTRALIA
+              </span>
+            </p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
