@@ -1,133 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <title>Signup Page</title>
-  </head>
-  <body>
-    <div class="container_pg13">
-      <div class="header_pg13">
-        <!-- <h3>Logo</h3> -->
-        <img
-          src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png"
-          alt=""
-          class="main_logo"
-        />
-      </div>
-      <div class="form_container_pg13">
-        <div class="form_content">
-          <!-- SignIn/SignUp -->
-          <div class="form_heading_pg2">
-            <div class="login_heading_pg2">
-              <h3 class="heading_pg2 active" onclick="setActive(this)">
-                Sign up
-              </h3>
-              <h3 class="heading_pg2" onclick="setActive(this)">Sign in</h3>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <title>Signup Page</title>
+    </head>
+    <body>
+        <div class="container_pg13">
+            <div class="header_pg13">
+                <!-- <h3>Logo</h3> -->
+                <img src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png" alt="" class="main_logo">
             </div>
-          </div>
-          <!-- Form Container -->
-          <div class="form_center_pg1">
-            <div class="firstname_container_pg2">
-              <div>
-                <h3 class="user_name_pg2">Hi Sean Rada,</h3>
-                <h3 class="otp_info_pg2">
-                  We just an OTP on your Mobile number
-                </h3>
-                <div class="flx_pg2 user_name_pg2">
-                  <h3>+91 23456789</h3>
-                  <a href="singup.html" class="change_number_pg2"
-                    >Change number</a
+            <header class="hide-desktop">
+                <img class="logo" src="./assets/logo.png">
+            </header>
+            <div class="form_container_pg13">
+                <div class="form_content">
+                    <!-- SignIn/SignUp -->
+                    <div class="form_heading_pg2">
+                        <div class="login_heading_pg2">
+                            <h3 class="heading_pg2 active" onclick="setActive(this)">
+                                Sign up
+                            </h3>
+                            <h3 class="heading_pg2" onclick="setActive(this)">Sign in</h3>
+                        </div>
+                    </div>
+                    <!-- Form Container -->
+                    <div class="form_center_pg1">
+                        <h2 class="hide-desktop is-size-2 has-text-weight-semibold">Sign up</h2>
+                        <div class="firstname_container_pg2">
+                            <div>
+                                <h3 class="user_name_pg2">Hi Sean Rada,</h3>
+                                <h3 class="otp_info_pg2">
+                                    We just an OTP on your Mobile number
+                                </h3>
+                                <div class="flx_pg2 user_name_pg2 xs-m-0">
+                                    <h3>+91 23456789</h3>
+                                    <a href="singup.html" class="change_number_pg2">
+                                        Change number
+                                    </a
                   >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flx_pg2">
+                            <h3 class="ft_w">Enter OTP</h3>
+                            <div class="flx">
+                                <h3 class="ft_w time_clock_pg2">01:45</h3>
+                                <button class="ft_w otp_resend_pg2">Resend</button>
+                            </div>
+                        </div>
+                        <div class="otp-container_pg2">
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="1"
+                            >
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="2"
+                            >
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="3"
+                            >
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="4"
+                            >
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="5"
+                            >
+                            <input
+                                type="text"
+                                class="otp-input_pg2"
+                                maxlength="1"
+                                tabindex="6"
+                            >
+                        </div>
+                    </div>
+                    <div class="btn_pg1">
+                        <a style="width: 100%" class="login_pg13" href="../page3.html">
+                            Continue
+                        </a>
+                    </div>
                 </div>
-              </div>
             </div>
-
-            <div class="flx_pg2">
-              <h3 class="ft_w">Enter OTP</h3>
-              <div class="flx">
-                <h3 class="ft_w time_clock_pg2">01:45</h3>
-                <button class="ft_w otp_resend_pg2">Resend</button>
-              </div>
+            <!-- RIGHT SIDE -->
+            <div class="banner_pg13">
+                <div>
+                    <div>
+                        <img src="C:\Users\Dell\Documents\superGP\assets\Group137.png" alt="" class="main_logo_pg13">
+                    </div>
+                    <div class="right_online_pg13">
+                        <h5>Get Online Consultaion</h5>
+                    </div>
+                    <div class="radio_btn_pg13">
+                        <input type="radio" name="radiogroup" checked>
+                        <input type="radio" name="radiogroup">
+                        <input type="radio" name="radiogroup">
+                        <input type="radio" name="radiogroup">
+                    </div>
+                </div>
             </div>
-
-            <div class="otp-container_pg2">
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="1"
-              />
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="2"
-              />
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="3"
-              />
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="4"
-              />
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="5"
-              />
-              <input
-                type="text"
-                class="otp-input_pg2"
-                maxlength="1"
-                tabindex="6"
-              />
-            </div>
-          </div>
-
-          <div class="btn_pg1">
-            <a style="width: 100%" class="login_pg13" href="../page3.html">
-              Proceed
-            </a>
-          </div>
         </div>
-      </div>
-
-      <!-- RIGHT SIDE -->
-
-      <div class="banner_pg13">
-        <div>
-          <div>
-            <img
-              src="C:\Users\Dell\Documents\superGP\assets\Group137.png"
-              alt=""
-              class="main_logo_pg13"
-            />
-          </div>
-          <div class="right_online_pg13">
-            <h5>Get Online Consultaion</h5>
-          </div>
-          <div class="radio_btn_pg13">
-            <input type="radio" name="radiogroup" checked />
-            <input type="radio" name="radiogroup" />
-            <input type="radio" name="radiogroup" />
-            <input type="radio" name="radiogroup" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
       // jQuery code to handle the "input" event
       $(document).ready(function () {
         $(".otp-input_pg2").on("input", function () {
@@ -155,6 +144,6 @@
           }
         });
       });
-    </script>
-  </body>
+        </script>
+    </body>
 </html>

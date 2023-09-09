@@ -1,106 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <title>Signup Page</title>
-  </head>
-  <body>
-    <div class="container_pg13">
-      <div class="header_pg13">
-        <!-- <h3>Logo</h3> -->
-        <img
-          src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png"
-          alt=""
-          class="main_logo"
-        />
-      </div>
-      <div class="form_container_pg13">
-        <div class="form_content">
-          <!-- SignIn/SignUp -->
-          <div class="form_heading_pg1">
-            <div class="login_heading_pg1">
-              <h3 class="heading_pg1 active" onclick="setActive(this)">
-                Sign up
-              </h3>
-              <h3 class="heading_pg1" onclick="setActive(this)">Sign in</h3>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <title>Signup Page</title>
+    </head>
+    <body>
+        <div class="container_pg13 xs-block">
+            <div class="header_pg13">
+                <!-- <h3>Logo</h3> -->
+                <img src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png" alt="" class="main_logo">
             </div>
-          </div>
-          <!-- Form Container -->
-          <div class="form_center_pg1">
-            <div class="firstname_container_pg1">
-              <div class="input_field_pg1">
-                <label for="">First name</label>
-                <input type="text" class="firstname" placeholder="First Name" />
-              </div>
-              <div class="input_field_pg1">
-                <label for="">Middle Name</label>
-                <input
-                  type="text"
-                  class="middlename"
-                  placeholder="Middle Name"
-                />
-              </div>
-              <div class="input_field_pg1">
-                <label for="">Last Name</label>
-                <input type="text" class="lastname" placeholder="Last Name" />
-              </div>
-            </div>
-
-            <div class="input_field_pg1">
-              <label for="" class="mobile">Enter Mobile Number</label>
-              <div class="flx_pg1">
-                <div class="country-code-container_pg1">
-                  <select class="country-code-select_pg1">
-                    <option value="+1">+91 (IND)</option>
-                    <option value="+91">+91</option>
-                    <option value="+44">+44</option>
-                    <!-- Add more country code options here -->
-                  </select>
+            <header class="hide-desktop">
+                <img class="logo" src="./assets/logo.png">
+            </header>
+            <div class="form_container_pg13">
+                <div class="form_content">
+                    <!-- SignIn/SignUp -->
+                    <div class="form_heading_pg1">
+                        <div class="login_heading_pg1">
+                            <h3 class="heading_pg1 active" onclick="setActive(this)">
+                                Sign up
+                            </h3>
+                            <h3 class="heading_pg1" onclick="setActive(this)">Sign in</h3>
+                        </div>
+                    </div>
+                    <!-- Form Container -->
+                    <div class="form_center_pg1">
+                      <h2 class="hide-desktop is-size-2 has-text-weight-semibold">Sign in</h2>
+                        <div class="firstname_container_pg1">
+                            <div class="input_field_pg1">
+                                <label for="">First name</label>
+                                <input type="text" class="firstname" placeholder="First Name">
+                            </div>
+                            <div class="input_field_pg1 xs-hidden">
+                                <label for="">Middle Name</label>
+                                <input type="text" class="middlename" placeholder="Middle Name">
+                            </div>
+                            <div class="input_field_pg1">
+                                <label for="">Last Name</label>
+                                <input type="text" class="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="input_field_pg1">
+                            <label for="" class="mobile">Enter Mobile Number</label>
+                            <div class="flx_pg1">
+                                <div class="country-code-container_pg1">
+                                    <select class="country-code-select_pg1">
+                                        <option value="+1">+91 (IND)</option>
+                                        <option value="+91">+91</option>
+                                        <option value="+44">+44</option>
+                                        <!-- Add more country code options here -->
+                                    </select>
+                                </div>
+                                <input type="text" class="firstname" placeholder="Enter Mobile Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_pg1">
+                        <a style="width: 100%" class="login_pg13" href="page3.html">
+                            Get OTP
+                        </a>
+                    </div>
                 </div>
-                <input
-                  type="text"
-                  class="firstname"
-                  placeholder="Enter Mobile Number"
-                />
-              </div>
             </div>
-          </div>
-
-          <div class="btn_pg1">
-            <a style="width: 100%" class="login_pg13" href="page3.html">
-              Proceed
-            </a>
-          </div>
+            <!-- RIGHT SIDE -->
+            <div class="banner_pg13">
+                <div>
+                    <div>
+                        <img src="C:\Users\Dell\Documents\superGP\assets\Group137.png" alt="" class="main_logo_pg13">
+                    </div>
+                    <div class="right_online_pg13">
+                        <h5>Get Online Consultaion</h5>
+                    </div>
+                    <div class="radio_btn_pg13">
+                        <input type="radio" name="radiogroup" checked>
+                        <input type="radio" name="radiogroup">
+                        <input type="radio" name="radiogroup">
+                        <input type="radio" name="radiogroup">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- RIGHT SIDE -->
-
-      <div class="banner_pg13">
-        <div>
-          <div>
-            <img
-              src="C:\Users\Dell\Documents\superGP\assets\Group137.png"
-              alt=""
-              class="main_logo_pg13"
-            />
-          </div>
-          <div class="right_online_pg13">
-            <h5>Get Online Consultaion</h5>
-          </div>
-          <div class="radio_btn_pg13">
-            <input type="radio" name="radiogroup" checked />
-            <input type="radio" name="radiogroup" />
-            <input type="radio" name="radiogroup" />
-            <input type="radio" name="radiogroup" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
