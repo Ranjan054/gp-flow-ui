@@ -1646,7 +1646,7 @@ th {
 .form_container_pg13 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: start;
   width: 55%;
 }
@@ -4182,7 +4182,7 @@ body {
     margin: 0;
   }
 
-  header {
+  .header-solo-m {
     border-bottom: none;
     height: 0;
     padding-top: 80px;
