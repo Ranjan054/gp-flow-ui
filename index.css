@@ -940,7 +940,7 @@ li:hover {
 /* Upload Mediacare */
 .upload_container_pg12 {
   width: 50%;
-  border: 1px solid #c5c5c5;
+  border: 1px dashed #c5c5c5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1833,16 +1833,6 @@ th {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* PAGE 14 */
 .user_txt_pg14 {
   width: 92%;
@@ -1853,6 +1843,10 @@ th {
   padding: 0 20px;
   font-size: 18px;
   color: #525252;
+}
+
+.address-field {
+  margin-top: 35px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -4304,12 +4298,11 @@ body {
     background-color: #3D386A;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    height: calc(100% - 160px);
+    /* height: calc(100% - 160px); */
   }
   .input_field_pg1 label {
     font-size: 14px;
     color: #fff;
-
   }
 
   .firstname_container_pg1 {
@@ -4419,5 +4412,104 @@ body {
     color: #fff;
   }
 
+  .dob_container_pg12 {
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 24px;
+  }
+
+  .date_field_pg12 p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .date_field_pg12 input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .gender_head_pg12 {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 24px;
+  }
+
+  .gender_selection_pg12 {
+    margin-left: 0;
+  }
+
+  .gender_selection_pg12 .gender-option_pg12 {
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 8px 24px;
+    color: #232323;
+    background-color: #fff;
+  }
+
+  .address-field {
+    margin-top: 35px;
+  }
+
+  .form_heading_pg13 {
+    display: none;
+  }
+
+  .firstname_container_pg13 div .user_name_pg13 {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .flx_sp_pg13 {
+    margin-top: 36px;
+
+  }
+  .firstname_container_pg13 div .otp_info_pg13 {
+    font-size: 14px;
+  }
+
+  .input_card_pg13 input {
+    padding: 10px 15px;
+    font-size: 14px
+  }
+
+  .dob_container_pg13 {
+    margin-top: 20px;
+  }
+
+  .date_field_pg13 p {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .date_field_pg13 input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .address_info_pg13 {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .input_card_cvv_pg13 input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .cvv_condition_pg13 span {
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .btn_pg13 {
+    margin-top: 54px;
+    background-color: #38BDD4;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
 
 }
