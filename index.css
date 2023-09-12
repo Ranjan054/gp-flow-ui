@@ -590,7 +590,7 @@ li:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   background-color: #f5f5f5;
 }
 
@@ -4430,6 +4430,79 @@ body {
 
   .pd-15 {
     margin-top: 4px;
+  }
+
+  .gp_title {
+    display: none;
+  }
+
+  .clinic_container {
+    display: none;
+  }
+
+  .input_container {
+    padding: 0 12px;
+  }
+
+  .xs-px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .search-button {
+    margin: 12px 12px 0;
+    width: 93%;
+  }
+
+  .card {
+    margin: 12px;
+    height: auto;
+    min-height: 161px;
+  }
+
+  .small-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .small-image img {
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .click-name {
+    font-size: 11px;
+  }
+
+  .direction {
+    font-size: 11px;
+  }
+
+  .left-section {
+    height: auto;
+    min-height: 95px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .right-section {
+    padding: 12px;
+  }
+
+  .right-section button {
+    font-size: 10px;
+  }
+
+  .right-section a {
+    font-size: 10px;
+  }
+
+  .button1, .button2, .button3 {
+    width: fit-content;
+    padding: 9px 14px;
   }
 
 }
