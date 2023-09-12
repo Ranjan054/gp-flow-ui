@@ -93,16 +93,16 @@ header {
 
 .user_details {
   display: flex;
-  width: 24%;
-  justify-content: space-between;
-  align-items: center;
+  /* width: 24%; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .login_user {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  /* width: 30%; */
 }
 
 .circle {
@@ -110,14 +110,16 @@ header {
   height: 35px;
   background-color: #000;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .notifications {
   display: flex;
   align-items: center;
   justify-content: eng;
-  width: 50%;
+  width: 29px;
   justify-content: end;
+  margin-right: 40px;
 }
 
 .space_container {
@@ -385,7 +387,7 @@ li:hover {
   align-items: center;
   text-align: center;
   padding: 10px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
 }
 
@@ -1798,6 +1800,13 @@ th {
   color: #fff;
 }
 
+.user_name_txt {
+  margin-left: 14px;
+  font-size: 16px;
+  color: #232323;
+  font-weight: 300;
+}
+
 
 
 
@@ -1849,6 +1858,40 @@ th {
   margin-top: 35px;
 }
 
+.super_logo .site_logo {
+  width: 196px;
+}
+
+.super_logo {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1600px) {
   header {
     height: 90px;
@@ -1870,7 +1913,7 @@ th {
 
 
   .login_user {
-    width: 38%;
+    /* width: 38%; */
   }
 
   .sidebar {
@@ -2041,8 +2084,7 @@ th {
   }
 
   .super_logo .site_logo {
-    width: 100%;
-    height: 80%;
+    width: 196px;
   }
 
   .main_logo_pg13 {
@@ -2050,11 +2092,11 @@ th {
   }
 
   .notifications {
-    width: 42%;
+    width: 29px;
   }
 
   .login_user {
-    width: 45%;
+    /* width: 45%; */
   }
 
   .country-code-select_pg1 {
@@ -2289,16 +2331,15 @@ th {
   }
 
   .super_logo .site_logo {
-    width: 85%;
-    height: 70%;
+    width: 196px;
   }
 
   .notifications {
-    width: 28%;
+    width: 29px;
   }
 
   .login_user {
-    width: 55%;
+    /* width: 55%; */
   }
 
   .circle {
@@ -2474,10 +2515,6 @@ th {
   }
 
 }
-
-
-
-
 
 /* Media Query for screens smaller than 992px */
 @media only screen and (max-width: 991px) {
@@ -2716,76 +2753,11 @@ th {
   .upload_container_pg12 {
     font-size: 14px;
   }
-}
 
-/* Media Query for screens smaller than 768px */
-@media only screen and (max-width: 767.98px) {
   .header_col {
-    flex-wrap: wrap;
-    /* Allow header elements to wrap for smaller screens */
-    justify-content: space-between;
-    /* Adjust alignment */
-  }
-
-  .super_logo,
-  .user_details {
-    flex: 1 0 100%;
-    /* Make logo and user details full-width for small screens */
-    text-align: center;
-    margin-bottom: 10px;
-    /* Add some spacing between the elements */
-  }
-
-  .notifications,
-  .login_user {
-    flex: 1 0 100%;
-    /* Make notification and login elements full-width */
-    text-align: center;
-  }
-
-  .login_user {
-    margin-top: 10px;
-    /* Add some spacing between the elements */
-  }
-
-  .circle {
-    margin-right: 10px;
-    /* Add some spacing between the elements */
-  }
-
-  /* Text Adjustments for smaller screens */
-  .booking_title {
-    font-size: 20px;
-    /* Further reduce font size for the booking title on smaller screens */
-  }
-
-  .title {
-    font-size: 16px;
-    /* Further reduce font size for the doctor titles on smaller screens */
-  }
-
-  .search-box,
-  .search-box2 {
-    font-size: 14px;
-    /* Reduce font size for the search boxes on even smaller screens */
-  }
-
-  .search_button {
-    font-size: 12px;
-    /* Reduce font size for the search button on even smaller screens */
-  }
-
-  .search_country_title {
-    font-size: 18px;
-    /* Reduce font size for the search country title on even smaller screens */
-  }
-
-  .search-country {
-    font-size: 10px;
-    /* Reduce font size for the search country on even smaller screens */
+    padding: 0 10px;
   }
 }
-
 
 /* ------------------- Common CSS -------------------------------- */
 
@@ -4016,144 +3988,11 @@ body {
   flex-shrink: 0;
 }
 
-/* @media screen and (max-width: ) {
-
-} */
-
 .m-input-wrapper {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-
-  /* header .logo {
-    width: 125px;
-  }
-
-  header .logo-container p {
-    font-size: 15px;
-  }
-
-  header .logo-container p span {
-    font-size: 15px;
-    margin-left: 15px;
-
-  }
-
-  header .logo-container p img {
-    width: 17px;
-    margin-right: 7px;
-  }
-
-  .internal-page {
-    height: initial;
-  }
-
-  .internal-page header .header-option>a:nth-child(2) {
-    margin: 0 25px;
-  }
-
-  .report,
-  .profile {
-    padding: 0 20px 25px;
-  }
-
-  .report-details .field {
-    display: block;
-  }
-
-  .report-details .field label {
-    width: 100%;
-  }
-
-  .report-details .field input,
-  .report-details .field textarea {
-    width: 100%;
-    font-size: 14px;
-    padding: 5px 19px;
-    border-radius: 4px;
-    margin-top: 5px;
-  }
-
-  .chat-page .main-section {
-    height: initial;
-    position: relative;
-  }
-
-  .chats-list {
-    height: 100%;
-    position: absolute;
-    background: #fff;
-    left: -100%;
-    width: 96%;
-  }
-
-  .chats-list.is-active {
-    left: 0;
-  }
-
-  .chats-list li p {
-    width: calc(100% - 115px)
-  }
-
-  .chats-list li span {
-    font-size: 12px;
-  }
-
-  .chat-list li .unread-badge {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-  }
-
-  .chats-list li {
-    font-size: 18px;
-  }
-
-  .chats-list .chat-list-header img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .chat-msg {
-    font-size: 14px;
-  }
-
-  .chat-content .chat-msg {
-    font-size: 12px;
-  }
-
-  .profile .profile-img {
-    padding: 0;
-    text-align: center;
-  }
-
-  .profile .profile-img img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .profile .profile-details .profile-name {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-
-  .profile .profile-details p {
-    display: block;
-    margin-bottom: 25px;
-  }
-
-  .profile .profile-details p label {
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .profile .profile-details p span {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 15px;
-  } */
-
   .xs-m-0 {
     margin: 0 !important;
   }
@@ -4510,6 +4349,87 @@ body {
     height: 44px;
     font-size: 16px;
     border-radius: 7px;
+  }
+
+  header {
+    padding: 0 16px;
+  }
+
+  .header_col {
+    padding: 0;
+  }
+
+  .super_logo .site_logo {
+    width: 172px;
+  }
+
+  .notifications {
+    width: 22px;
+    margin-right: 10px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user_name_txt {
+    font-size: 14px;
+    margin-left: 6px;
+    width: 67px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .dis_flx {
+    width: 100%;
+    margin: 0;
+  }
+
+  .booking_container {
+    padding: 14px 0;
+  }
+
+  .booking_title {
+    font-size: 16px;
+  }
+
+  .clinic_counter {
+    margin-top: 18px;
+  }
+
+  .xs-tab-item {
+    flex-direction: column;
+  }
+
+  .tab_circle {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+  }
+
+  .step-count {
+    font-size: 15px;
+    line-height: 0;
+  }
+
+  .tab_title {
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .search-container {
+    margin-top: 24px;
+  }
+
+  .pd-15 {
+    margin-top: 4px;
   }
 
 }
