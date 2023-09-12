@@ -4562,5 +4562,18 @@ body {
     padding: 10px 15px;
     font-size: 14px;
   }
+  
+  .question_container_pg7 {
+    margin: 0 6px;
+  }
+
+  .schedule_pg7 th {
+    font-size: 12px;
+  }
+
+  .border_none_pg7  p{
+    font-size: 12px;
+  }
+
 
 }
