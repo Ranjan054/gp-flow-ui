@@ -2196,6 +2196,7 @@ th {
   .small-image_pg8 {
     height: 50px;
     width: 50px;
+    flex-shrink: 0;
   }
 
   .title_pg8 {
@@ -4573,6 +4574,111 @@ body {
 
   .border_none_pg7  p{
     font-size: 12px;
+  }
+
+  .booking_title_pg8 {
+    font-size: 16px;
+  }
+
+  .spc_btn_pg8 a {
+    display: none;
+  }
+
+  .small-image_pg8 {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
+  .center_section_pg8 {
+    display: none;
+  }
+
+  .card_pg8 {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 6px 12px;
+  }
+
+  .left-section_pg8 {
+    width: 100%;
+    padding-left: 4px;
+  }
+
+  .center_section_pg8 {
+    width: 100%;
+  }
+
+  .right_section_pg8 {
+    width: 100%;
+    text-align: left;
+    margin-left: 94px;
+    margin-top: -19px;
+  }
+
+  .appointment_time_pg8 {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .meet_content_pg8 {
+    /* justify-content: start; */
+    align-items: start;
+
+    flex-direction: column;
+  }
+
+  .title_pg8 {
+    font-size: 16px;
+  }
+
+  .click-name_pg8 {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .direction_2877_pg8 {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+
+  .appointment_date_pg8 {
+    font-size: 12px;
+  }
+
+  .appointment_time_bold_pg8 {
+    font-size: 12px;
+  }
+
+  .joining_meet_pg8 {
+    margin-top: 10px;
+  }
+
+  .time_meet_pg8 {
+    font-size: 10px;
+  }
+
+  .joining_time_pg8 {
+    font-size: 14px;
+  }
+
+  .meet_icon_join_pg8 {
+    margin-top: 10px;
+  }
+
+  .p_join_pg8 {
+    font-size: 12px;
+  }
+
+  .meet_icon_join_pg8 {
+    width: fit-content;
+    height: auto;
+    padding: 10px 14px 10px 12px;
+  }
+
+  .meet_icon_join_pg8 img {
+    width: 20px;
+    flex-shrink: 0;
   }
 
 
