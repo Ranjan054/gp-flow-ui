@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Header Example</title>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <!-- HEADER -->
-      <header>
-        <div class="header_col">
-          <div class="super_logo">
-            <img
-              class="site_logo"
-              src="C:\Users\Dell\Documents\superGP\assets\MaskGP1.png"
-            />
-          </div>
-          <div class="user_details">
-            <div class="notifications">
-              <img src="C:/Users/Dell/Documents/superGP/assets/bell.svg" />
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Header Example</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- HEADER -->
+            <header>
+                <div class="header_col">
+                    <div class="super_logo">
+                        <img class="site_logo" src="./assets/logo.png">
+                    </div>
+                    <div class="user_details">
+                        <div class="notifications">
+                            <img src="./assets/bell-notification.png">
+                        </div>
+                        <div class="login_user">
+                            <div class="circle">
+                                <img src="./assets/images/chat-profile.png" alt="profile">
+                            </div>
+                            <h4 class="user_name_txt">John Doe</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="space_container">
+                <!-- SIDE BAR -->
+                <ul class="sidebar">
+                    <li id="dashboard-tab">Dashboard</li>
+                    <li class="active" id="booking-tab">Booking Appointment</li>
+                    <li id="referral-tab">Referral Letter</li>
+                    <li id="profile-tab">My Profile</li>
+                </ul>
+                <!-- Main Content -->
+                <div class="dis_flx_pg3">
+                    <div class="content_container_pg3">
+                        <h4 class="welcome_txt_pg3">Welcome Sean</h4>
+                        <h2 class="titlep_g3">You’r Successfully Signed Up</h2>
+                        <div class="login_btn_pg3">
+                            <a class="login_pg3" href="./page4.html">Book an Appointment</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="login_user">
-              <div class="circle"></div>
-
-              <h4 class="user_name_txt">John Doe</h4>
-            </div>
-          </div>
         </div>
-      </header>
-      <div class="space_container">
-        <!-- SIDE BAR -->
-        <ul class="sidebar">
-          <li id="dashboard-tab">Dashboard</li>
-          <li class="active" id="booking-tab">Booking Appointment</li>
-          <li id="referral-tab">Referral Letter</li>
-          <li id="profile-tab">My Profile</li>
-        </ul>
-        <!-- Main Content -->
-        <div class="dis_flx_pg3">
-          <div class="content_container_pg3">
-            <h4 class="welcome_txt_pg3">Welcome Sean</h4>
-            <h2 class="titlep_g3">You’r Successfully Signed Up</h2>
-            <div class="login_btn_pg3">
-              <a class="login_pg3" href="./page4.html">Book an Appointment</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Rest of the HTML content -->
-  </body>
-  <script>
+        <!-- Rest of the HTML content -->
+    </body>
+    <script>
     // Get the tabs
     var dashboardTab = document.getElementById("dashboard-tab");
     var bookingTab = document.getElementById("booking-tab");
@@ -99,5 +95,5 @@
     function navigateToPage(pageURL) {
       window.location.href = pageURL;
     }
-  </script>
+    </script>
 </html>
