@@ -3857,8 +3857,13 @@ body {
   border-radius: 10px;
   text-decoration: none;
   outline: none;
-  margin-left: 28px;
+  margin-left: 22px;
 }
+
+.patient-detail-wrapper .print-btn {
+  margin-left: 22px;
+}
+ 
 
 .patient-detail-wrapper .form-second-sec {
   box-shadow: 0px 1px 6px #95959515;
@@ -3968,6 +3973,16 @@ body {
   border-radius: 10px;
   padding: 19px 18px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.patient-detail-wrapper .patient-detail-btn-green {
+  min-width: 130px;
+  background-color: #05A26C;
+  border-radius: 10px;
+  padding: 19px 18px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .user-detail-wrapper {
@@ -4007,6 +4022,133 @@ body {
 .header {
   height: auto;
 }
+
+.pres-wrapper {
+  margin-top: 20px;
+}
+
+
+.pres-wrapper .pres-title {
+  color: #05A26C;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.pres-table {
+  margin-top: 16px;
+}
+
+.pres-header {
+  background-color: #59519E;
+  display: flex;
+  padding: 12px 10px;
+}
+
+.pres-header-wrapper1 {
+  width: 25%;
+}
+
+.pres-header-wrapper2 {
+  width: 15%;
+}
+
+.pres-header-wrapper3 {
+  width: 20%;
+}
+
+.pres-header-wrapper4 {
+  width: 18%;
+}
+
+.pres-header-wrapper5 {
+  width: 27%;
+}
+
+.pres-header p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pres-body {
+  display: flex;
+  margin-top: 10px;
+}
+
+.pres-body-wrapper1 {
+  width: 25%;
+}
+
+.pres-body-wrapper2 {
+  width: 15%;
+}
+
+.pres-body-wrapper3 {
+  width: 20%;
+}
+
+.pres-body-wrapper4 {
+  width: 18%;
+}
+
+.pres-body-wrapper5 {
+  width: 24%;
+}
+
+.pres-body-wrapper6 {
+  width: 3%;
+}
+
+.pres-body-wrapper6 img {
+  width: 100%;
+}
+
+
+.pres-body p {
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #F5F5F5;
+  margin-right: 10px;
+}
+
+.pres-body input {
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #F5F5F5;
+  /* margin-right: 10px; */
+  width: 95%;
+  border: none;
+  outline: none;
+}
+
+.pres-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #707070;
+  margin: 10px 0;
+}
+
+.pres-butto {
+  background-color: #05A26C;
+  padding: 12px 10px;
+  width: fit-content;
+  border-radius: 2px;
+}
+
+.pres-butto p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 767px) {
   .xs-m-0 {
@@ -4059,6 +4201,10 @@ body {
 
   .xs-ml-16 {
     margin-left: 16px;
+  }
+
+  .xs-leading-24 {
+    line-height: 24px;
   }
 
   .header-solo-m {
@@ -4790,11 +4936,45 @@ body {
   .chat-wrapper .chat-profile {
     width: 48px;
     height: 48px;
+    margin-right: 10px;
   }
 
   .chat-wrapper .chat-notification {
     width: 25px;
     height: 25px;
+  }
+
+  .header {
+    min-height: 75px;
+  }
+
+  .chat-wrapper .chat-back-btn {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+  }
+
+  .chat-wrapper .chat-msg-wrapper {
+    padding: 12px 16px 30px 16px;
+    flex-direction: column;
+  }
+
+  .chat-wrapper .chat-msg-card {
+    padding: 8px 15px;
+  }
+
+  .chat-wrapper .chat-msg-card p, .chat-wrapper .chat-msg-card a, .chat-wrapper .chat-msg-card span {
+    font-size: 13px;
+  }
+
+  .chat-wrapper .input-text-wrapper input {
+    padding: 20px 84px 20px 18px;
+    font-size: 14px;
+  }
+
+  .chat-wrapper .send-btn {
+    width: 45px;
+    height: 45px;
   }
 
 }
