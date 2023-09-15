@@ -4144,6 +4144,10 @@ body {
   font-weight: 600;
 }
 
+.bottom-menu-wrapper {
+  display: none;
+}
+
 
 
 
